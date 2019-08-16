@@ -1,0 +1,46 @@
+.card0{
+	position: relative;
+	padding: 5%;
+	border-radius: 5% 5% 15% 15%;
+	width: 40%;
+	height: 25em;
+	text-align:center;
+	opacity: 0.90;
+    left: 50%;
+	top: 16em;	
+	border: 0.1em solid #4096FF;
+	background-color: #01172B;
+    transform: translate(-50%, -50%);
+}
+h4 {
+	color:white;
+}
+input[type='file'] {
+	display: none;
+}
+input #input{
+	border: 1em solid #00468c !important;
+}
+.input-wrapper label {
+background-color: #3498db;
+border-radius: 5px;
+color: #fff;
+margin: 10px;
+padding: 6px 20px;
+}
+
+.input-wrapper label:hover {
+background-color: #2980b9
+}
+.card{
+	position: relative;
+	z-index:12;
+	border-radius: 0.1% 0.1% 15% 15%;		
+	width:100%;			
+	opacity: 0.90;
+	filter: alpha(opacity=65);	
+}
+
+nav {
+	background-color: black!important;
+}

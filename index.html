@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Login</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">    
+
+  </head>
+
+  <body style="position: relative;background-image: url('css/images.jpg');width:100%;height:100%; opacity: 1; filter: alpha(opacity=65);">
+    <div class="container">
+      <div class="card0">
+        <h4>Sistema da Vigilância Sanitária<br/>Rio Grande - RS<br/><br/></h4>     
+        <div class="card2">
+          <form id="form">
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="email" id="inputEmail"class="form-control" placeholder="Email" required="required" autofocus="autofocus">
+                <label for="inputEmail">Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="required">
+                <label for="inputPassword">Senha</label>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-block" style="background-color:black;"href="home.html">Login</a>
+          </form>
+          <div class="text-center">
+            <a class="d-block small mt-3" href="forgot-password.html">Esqueceu o email ou a senha?</a>
+          </div>
+        </div>;
+      </div>
+    </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+     <script>
+  // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA0aHbxOLTqKvooFkrQKlKYyPMspSvB248",
+        authDomain: "sistemavigilanciasanitaria.firebaseapp.com",
+        databaseURL: "https://sistemavigilanciasanitaria.firebaseio.com",
+        projectId: "sistemavigilanciasanitaria",
+        storageBucket: "sistemavigilanciasanitaria.appspot.com",
+        messagingSenderId: "571592403681",
+        appId: "1:571592403681:web:2fd9d6fbbed38d63"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  </body>
+
+</html>

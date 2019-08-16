@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Denúncia - ANVISA</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>
+
+  <body style="background-color:rgba(114, 156, 224, 0.3);" id="page-top">
+      <nav style="background-color:#01172B!important;" class="navbar navbar-dark bg-dark" style="background-color:black">
+          <a class="navbar-brand" href="#" style="font-family: 'Playfair Display', serif;">Vigilância Sanitária</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="home.html" style="font-family: 'Playfair Display', serif;font-size:18px;">Home </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="charts.html" style="font-family: 'Playfair Display', serif;font-size:18px;">Gráfico</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="database.html" style="font-family: 'Playfair Display', serif;font-size:18px;">Upar relatório</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tables.html" style="font-family: 'Playfair Display', serif;font-size:18px;">Relatórios</a>
+              </li>
+              <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" style="font-family: 'Playfair Display', serif;font-size:18px;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cadastrar
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#" style="font-family: 'Playfair Display', serif;font-size:17px;">Requisição</a>
+                  <a class="dropdown-item active" href="requisicao.html" style="font-family: 'Playfair Display', serif;font-size:17px;" >Denúncia</a>
+                  </div>
+              </li>
+              </ul>
+          </div>
+      </nav>
+
+
+      <div class="container">                        
+      <div class="plano" style="position:relative; background-color:white; color:black;top:2em;border-radius:5%; border: 0.2em groove #b7c3d4; height:75em; width:100%">            
+        <div class="container">    
+          <br/>          
+        <div style="position:relative;" class="container-fluid">
+            
+            <p style="font-family: 'Playfair Display', serif; text-align: center; font-size:30px">Receituário</p>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label  for="inputtext4" >Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputtext4" >CNPJ</label>
+                    <input type="cnpj" class="form-control" id="cnpj" placeholder="XX.XXX.XXX/XXXX-XX">
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label  for="inputtext4" >Responsável</label>
+                        <input type="resp" class="form-control" id="nome" placeholder="Nome">
+                    </div>
+                </div>
+                <div class="form-row">                    
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Endereço Profissional</label>
+                  <input type="text" class="form-control" id="endprof" placeholder="Rua General Câmara, nº 0">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">CPF</label>
+                    <input type="cpf" class="form-control" id="cpf" placeholder="">
+                  </div>
+                </div>  
+                <div class="form-row">                                        
+                    <div class="form-group col-md-6">
+                    <label for="inputAddress2">Endereço Residêncial</label>
+                    <input type="text" class="form-control" id="endres" placeholder="Rua General Câmara, nº 0">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Identidade</label>
+                        <input type="rg" class="form-control" id="identidade">
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputEstado">Data de Emissão</label>
+                    <input type="date" class="form-control" id="dataemi">                    
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputtext4">CRM/CRMV/CRO</label>                    
+                    <input type="text" class="form-control" id="cr">
+                  </div>
+                  <div class="form-group col-md-4">
+                        <label for="inputtext4">Especialidade</label>
+                        <input type="text" class="form-control" id="espec">
+                  </div> 
+                </div>
+                <div class="form-row">                                        
+                    <div class="form-group col-md-4">
+                        <label for="inputtext4">Fone Profissional</label>
+                        <input type="text" class="form-control" id="foneprof" placeholder="(XX) XXXX-XXXX">
+                    </div> 
+                    <div class="form-group col-md-4">
+                        <label for="inputtext4">Fone Residêncial</label>
+                        <input type="text" class="form-control" id="foneres" placeholder="(XX) XXXX-XXXX">
+                    </div> 
+                    <div class="form-group col-md-4">
+                        <label for="inputtext4">Data</label>
+                        <input type="date" class="form-control" id="data">
+                    </div> 
+                </div>                       
+                <button type="submit" class="btn btn-primary" id="addButton">Entrar</button>
+              </form>
+            <br/>
+            <br/>      
+            <br/>
+            <br/>         
+        </div>
+      </div>      
+        <!-- /.container-fluid -->
+
+<div id="wrapper">
+   <footer style="position:fixed;bottom:0;width:100%;" class="sticky-footer">
+      <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>Copyright © Your Website 2018</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <!-- /#wrapper -->
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <!-- Page level plugin JavaScript-->
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+    
+    <!-- Core plugin JavaScript-->
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script> 
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA0aHbxOLTqKvooFkrQKlKYyPMspSvB248",
+            authDomain: "sistemavigilanciasanitaria.firebaseapp.com",
+            databaseURL: "https://sistemavigilanciasanitaria.firebaseio.com",
+            projectId: "sistemavigilanciasanitaria",
+            storageBucket: "sistemavigilanciasanitaria.appspot.com",
+            messagingSenderId: "571592403681",
+            appId: "1:571592403681:web:2fd9d6fbbed38d63"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/pdfReceituarios.js"></script>
+
+  </body>
+
+</html>
